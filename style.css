@@ -1,0 +1,49 @@
+body {
+    background-color: purple;
+
+}
+#container {
+    height:50px;
+    width:300px;
+    overflow: hidden;
+    margin:50px auto;
+    padding-left:10px;
+}
+
+h1 {
+    margin:100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color:aqua;
+    letter-spacing: 1.1em;
+
+}
+
+.middle, .middle2, .middle3 {
+    display:inline-block;
+    float:left;
+    height:80px;
+    width:80px;
+    border:10px solid;
+    border-radius:50%;
+    border-color: transparent   transparent transparent aqua;
+    border-width:  10px;
+    -webkit-animation:rotate 3.6s linear 0s infinite ;
+    transform:rotate(-46deg);
+    margin-left:-10px;
+  }
+  .middle2{-webkit-animation:rotate 3.6s linear 1.2s infinite ;}
+  .middle3{-webkit-animation:rotate 3.6s linear 2.4s infinite ;}
+  @-webkit-keyframes rotate {
+    0%{
+      transform:rotate(-46deg);    
+    }
+    50%{transform:rotate(314deg);
+      border-color: transparent   transparent transparent teal;
+    }
+    100%{
+      transform:rotate(314deg);
+    }
+  }
+  
+}
